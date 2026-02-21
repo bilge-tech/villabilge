@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bilge-lacivert: #1B428A;
+  --color-bilge-turkuaz: #48C1D9;
+}
+
+html {
+  scroll-behavior: smooth;
+}
