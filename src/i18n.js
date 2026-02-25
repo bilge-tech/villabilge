@@ -1,59 +1,69 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
-// TERCÜMANIN SÖZLÜKLERİ BURADA
 const resources = {
-  // TÜRKÇE SÖZLÜK
   tr: {
     translation: {
       "Anasayfa": "Anasayfa",
       "Hakkimizda": "Hakkımızda",
       "Villalarimiz": "Villalarımız",
       "Cirali": "Çıralı",
-      "Iletisim": "İletişim"
+      "Iletisim": "İletişim",
+      // --- HERO BÖLÜMÜ ---
+      "heroTitle": "Doğanın Kalbinde, Huzur Dolu Bir Mola",
+      "heroSubtitle": "Çıralı'nın eşsiz doğasında, portakal ve limon ağaçları arasında unutulmaz bir tatil deneyimi.",
+      "heroButton": "Villalarımızı Keşfedin"
     }
   },
-  // İNGİLİZCE SÖZLÜK
   en: {
     translation: {
       "Anasayfa": "Home",
       "Hakkimizda": "About Us",
       "Villalarimiz": "Our Villas",
       "Cirali": "Discover Çıralı",
-      "Iletisim": "Contact"
+      "Iletisim": "Contact",
+      // --- HERO BÖLÜMÜ ---
+      "heroTitle": "A Peaceful Break in the Heart of Nature",
+      "heroSubtitle": "An unforgettable holiday experience among orange and lemon trees in the unique nature of Çıralı.",
+      "heroButton": "Discover Our Villas"
     }
   },
-  // ALMANCA SÖZLÜK
   de: {
     translation: {
       "Anasayfa": "Startseite",
       "Hakkimizda": "Über Uns",
       "Villalarimiz": "Unsere Villen",
       "Cirali": "Çıralı Entdecken",
-      "Iletisim": "Kontakt"
+      "Iletisim": "Kontakt",
+      // --- HERO BÖLÜMÜ ---
+      "heroTitle": "Eine Friedliche Pause im Herzen der Natur",
+      "heroSubtitle": "Ein unvergessliches Urlaubserlebnis inmitten von Orangen- und Zitronenbäumen in der einzigartigen Natur von Çıralı.",
+      "heroButton": "Entdecken Sie Unsere Villen"
     }
   },
-  // RUSÇA SÖZLÜK
   ru: {
     translation: {
       "Anasayfa": "Главная",
       "Hakkimizda": "О Нас",
       "Villalarimiz": "Наши Виллы",
       "Cirali": "О Чыралы",
-      "Iletisim": "Контакты"
+      "Iletisim": "Контакты",
+      // --- HERO BÖLÜMÜ ---
+      "heroTitle": "Мирный Отдых в Сердце Природы",
+      "heroSubtitle": "Незабываемый отдых среди апельсиновых и лимонных деревьев в уникальной природе Чыралы.",
+      "heroButton": "Откройте Для Себя Наши Виллы"
     }
   }
 };
 
-// TERCÜMANIN AYARLARI
 i18n
-  .use(initReactI18next) // Tercümana React mikrofonunu takıyoruz
+  .use(initReactI18next)
   .init({
-    resources,           // Yukarıdaki sözlükleri eline veriyoruz
-    lng: "tr",           // Site ilk açıldığında varsayılan dil Türkçe olsun
-    fallbackLng: "tr",   // Eğer çevirisi olmayan bir kelimeye denk gelirse Türkçe halini göstersin
+    resources,
+    lng: "tr",
+    fallbackLng: "tr",
     interpolation: {
-      escapeValue: false // React'in güvenlik ayarlarıyla uyumlu çalışması için
+      escapeValue: false
     }
   });
 

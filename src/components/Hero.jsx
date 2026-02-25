@@ -1,32 +1,40 @@
 import React from 'react';
+// 1. TERCÜMANI ÇAĞIRIYORUZ
+import { useTranslation } from 'react-i18next'; 
 
 function Hero() {
+  // 2. ÇEVİRİ FONKSİYONUNU (t) ALIYORUZ
+  const { t } = useTranslation(); 
+
   return (
-    // 'h-screen' ekranın tamamını kaplamasını sağlar
-    <div className="relative h-screen flex items-center justify-center mt-16">
+    <div id="home" className="relative h-screen w-full flex items-center justify-center">
       
       {/* Arka Plan Resmi */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center z-0" 
-        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')" }}
-      >
-        {/* Resmi biraz karartmak için siyah bir tül (overlay) çekiyoruz ki beyaz yazılar okunsun */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src="/bilge2.webp"
+          alt="Villa Bilge Manzara" 
+          className="w-full h-full object-cover"
+        />
         <div className="absolute inset-0 bg-black/40"></div>
       </div>
 
-      {/* İçerik ve Yazılar */}
-      <div className="relative z-10 text-center text-white px-4">
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 drop-shadow-lg">
-          Villa Bilge'ye Hoş Geldiniz
+      {/* 3. SABİT YAZILARI TERCÜMANA ({t('...')}) BAĞLIYORUZ */}
+      <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
+        <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 drop-shadow-lg">
+          {t('heroTitle')}
         </h1>
-        <p className="text-xl md:text-2xl mb-8 drop-shadow-md">
-          Çıralı'nın eşsiz doğasında, huzur dolu bir tatil...
+        <p className="text-lg md:text-2xl text-gray-100 mb-8 drop-shadow-md">
+          {t('heroSubtitle')}
         </p>
-        <button className="bg-bilge-turkuaz text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-white hover:text-bilge-lacivert transition-all shadow-lg cursor-pointer">
-          Hemen Keşfet
+        <button 
+          onClick={() => document.getElementById('villalarimiz').scrollIntoView({ behavior: 'smooth' })}
+          className="bg-bilge-turkuaz hover:bg-opacity-90 text-white font-bold py-4 px-8 rounded-full text-lg transition transform hover:scale-105 shadow-lg"
+        >
+          {t('heroButton')}
         </button>
       </div>
-      
+
     </div>
   );
 }

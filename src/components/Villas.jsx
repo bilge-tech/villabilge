@@ -5,10 +5,9 @@ function Villas() {
   // Neden Dizi (Array) kullanıyoruz? Fotoğrafları tek tek yazmak yerine bir listede tutup sırayla göstermek için.
   // Sen buraya kendi çektiğin fotoğrafların isimlerini/linklerini koyacaksın. Şimdilik uygun görseller koydum.
   const images = [
-    "https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=1000&q=80", // Ev dış çekim
-    "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1000&q=80", // Ebeveyn Odası
-    "https://images.unsplash.com/photo-1505693314120-0d443867891c?auto=format&fit=crop&w=1000&q=80", // Mutfak
-    "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1000&q=80", // Bahçe/Balkon
+    "/bilge3.webp", // Ev dış çekim
+    "/bilge2.webp", // Ebeveyn Odası
+    "/bilge1.webp", // Mutfak
   ];
 
   // === 2. REACT'İN HAFIZASI VE ZAMANLAYICISI ===

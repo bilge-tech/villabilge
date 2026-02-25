@@ -6,7 +6,7 @@ function Cirali() {
       id: 1,
       title: 'Yanartaş (Chimaera)',
       description: 'Binlerce yıldır sönmeyen mitolojik ateş.',
-      image: 'https://images.unsplash.com/photo-1629196615344-a5c64048013c?auto=format&fit=crop&w=800&q=80',
+      image: '/yanartas.webp',
       // CSS'indeki .tall karşılığı (2 kat uzun)
       sizeClass: 'md:row-span-2' 
     },
@@ -14,7 +14,7 @@ function Cirali() {
       id: 2,
       title: 'Olimpos Antik Kenti',
       description: 'Tarihin içinde bir nehir yürüyüşü.',
-      image: 'https://images.unsplash.com/photo-1590079080759-84c920744726?auto=format&fit=crop&w=800&q=80',
+      image: '/olimpos.webp',
       // CSS'indeki .wide karşılığı (2 kat geniş)
       sizeClass: 'md:col-span-2' 
     },
@@ -22,35 +22,35 @@ function Cirali() {
       id: 3,
       title: 'Tekne Turları',
       description: 'Akdeniz\'in gizli koylarını keşfedin.',
-      image: 'https://images.unsplash.com/photo-1544550581-5f7ceaf7f992?auto=format&fit=crop&w=800&q=80',
+      image: '/tekne.webp',
       sizeClass: '' // Standart 1x1
     },
     {
       id: 4,
       title: 'Çıralı Sahili',
       description: '3 kilometrelik eşsiz bir kumsal ve masmavi deniz.',
-      image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80',
+      image: '/deniz.webp',
       sizeClass: 'md:col-span-2' 
     },
     {
       id: 5,
       title: 'Likya Yolu',
       description: 'Tarihi patikalarda doğa yürüyüşü.',
-      image: 'https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=800&q=80',
+      image: '/likya.webp',
       sizeClass: 'md:row-span-2' 
     },
     {
       id: 6,
       title: 'Ulupınar',
       description: 'Buz gibi suların üzerinde yemek keyfi.',
-      image: 'https://images.unsplash.com/photo-1504413106449-613bc0ae21b2?auto=format&fit=crop&w=800&q=80',
+      image: '/ulupınar.webp',
       sizeClass: '' 
     },
     {
       id: 7,
       title: 'Caretta Caretta',
       description: 'Doğanın mucizesine tanıklık edin.',
-      image: 'https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?auto=format&fit=crop&w=800&q=80',
+      image: '/caretta.webp',
       sizeClass: 'md:col-span-2' 
     }
   ];

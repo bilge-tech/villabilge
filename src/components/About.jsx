@@ -21,10 +21,9 @@ function About() {
           <div className="relative">
             {/* Neden 'object-cover'? Sen ileride kendi fotoğrafınızı koyduğunda, resmin en-boy oranı bozulmadan (sünmeden) bu kutunun içine kusursuzca yerleşmesi için. */}
             <img 
-              src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80" 
+              src="/bilge1.webp"
               alt="Villa Bilge Çıralı" 
-              className="w-full h-[125px] object-cover rounded-2xl shadow-2xl"
-            />
+className="w-full h-[350px] md:h-[450px] lg:h-[500px] object-cover rounded-2xl shadow-2xl"            />
             {/* Fotoğrafın arkasına tasarımsal küçük bir dekoratif kutu koyuyoruz (şık dursun diye) */}
             <div className="absolute -z-10 -bottom-6 -left-6 w-full h-full border-4 border-bilge-turkuaz rounded-2xl hidden md:block"></div>
           </div>
@@ -38,11 +37,11 @@ function About() {
             {/* Neden 'leading-relaxed'? Satır aralarını biraz açarak okumayı kolaylaştırır. */}
             <div className="space-y-6 text-gray-600 text-lg leading-relaxed">
               <p>
-                Çıralı'nın el değmemiş doğasında, yeşilin ve mavinin buluştuğu noktada yer alan Villa Bilge, sizlere unutulmaz bir tatil deneyimi sunmak için tasarlandı.
+            Çıralı'nın eşsiz doğasında, 6000 metrekarelik yemyeşil bir portakal bahçesinin içerisine gizlenmiş Villa Bilge'ye hoş geldiniz. Şehrin gürültüsünden uzak, kuş sesleri ve taptaze narenciye kokuları eşliğinde huzur dolu bir tatil arayanlar için kapılarımızı açıyoruz.
+
+Misafirlerimize hem otel konforunu hem de kendi evlerinin özgürlüğünü aynı anda sunmayı hayal ettik. Bu doğrultuda tasarladığımız, birbirinden tamamen bağımsız 8 özel evimizle hizmet veriyoruz. Geniş ve ferah 2+1 konseptindeki evlerimizde, aileniz ve sevdiklerinizle baş başa, doğayla iç içe izole bir tatil deneyimi sizi bekliyor. Sabahları portakal ağaçlarının gölgesinde uyanmak, gün boyu verandadaki hamağınızda kitabınızı okumak ve Çıralı'nın o meşhur berrak sularına sadece kısa bir yürüyüşle ulaşmak için Villa Bilge'de yeriniz hazır.
               </p>
-              <p>
-                Yıllardır <strong>Çıralı Özge Bungalow</strong>'da misafirlerimizi aile sıcaklığıyla ağırlamanın mutluluğunu yaşıyoruz. Edindiğimiz bu tecrübeyi ve misafirperverliği, şimdi Villa Bilge’nin modern dokunuşlarıyla birleştirerek sizlere sunmaktan gurur duyuyoruz.
-              </p>
+              
               
               {/* ALINTI KUTUSU: Babanızın sözünü ön plana çıkarmak için soluna turkuaz bir çizgi çekiyoruz. */}
               <div className="mt-8 p-6 bg-slate-50 rounded-xl border-l-4 border-bilge-turkuaz shadow-sm">
@@ -50,7 +49,7 @@ function About() {
                   "Sizleri Çıralı'nın eşsiz doğasında, sadece bir müşteri olarak değil, ailemizin bir parçası gibi ağırlamaktan mutluluk duyuyoruz."
                 </p>
                 <div className="mt-4 flex items-center gap-3">
-                  <span className="text-bilge-lacivert font-bold not-italic">— Osman Şahin ve Ailesi</span>
+                  <span className="text-bilge-lacivert font-bold not-italic">— Şahin Ailesi</span>
                 </div>
               </div>
               
