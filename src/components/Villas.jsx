@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 function Villas() {
+  // Çeviri fonksiyonumuzu içeri aktarıyoruz
+  const { t } = useTranslation();
+
   // === 1. BİLGİLER VE FOTOĞRAFLAR (Veri Tabanımız) ===
   // Neden Dizi (Array) kullanıyoruz? Fotoğrafları tek tek yazmak yerine bir listede tutup sırayla göstermek için.
   // Sen buraya kendi çektiğin fotoğrafların isimlerini/linklerini koyacaksın. Şimdilik uygun görseller koydum.
@@ -43,8 +47,8 @@ function Villas() {
         
         {/* --- BAŞLIK KISMI --- */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-bilge-lacivert mb-4">Villalarımız</h2>
-          <p className="text-gray-600 text-lg">Portakal bahçelerinin içinde, size özel 2+1 müstakil yaşam alanları.</p>
+          <h2 className="text-4xl font-bold text-bilge-lacivert mb-4">{t('villasTitle')}</h2>
+          <p className="text-gray-600 text-lg">{t('villasSubtitle')}</p>
         </div>
 
         {/* --- 1. KISIM: FOTOĞRAF SLİDER'I --- */}
@@ -86,40 +90,40 @@ function Villas() {
         {/* --- 2. KISIM: VİLLA ÖZELLİKLERİ --- */}
         {/* Neden grid? Özellikleri telefonda alt alta 2'li, bilgisayarda yan yana 4'lü kutular halinde şıkça dizmek için. */}
         <div className="bg-white p-8 rounded-3xl shadow-lg border border-gray-100">
-          <h3 className="text-2xl font-bold text-bilge-lacivert mb-6 border-b pb-4">Özellikler & İmkanlar</h3>
+          <h3 className="text-2xl font-bold text-bilge-lacivert mb-6 border-b pb-4">{t('featuresTitle')}</h3>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             <div className="flex items-center gap-3">
               <span className="text-3xl">🏠</span>
-              <span className="text-gray-700 font-medium">2+1 Müstakil Villa</span>
+              <span className="text-gray-700 font-medium">{t('feature1')}</span>
             </div>
             <div className="flex items-center gap-3">
               <span className="text-3xl">🍊</span>
-              <span className="text-gray-700 font-medium">Portakal Bahçesi</span>
+              <span className="text-gray-700 font-medium">{t('feature2')}</span>
             </div>
             <div className="flex items-center gap-3">
               <span className="text-3xl">🛏️</span>
-              <span className="text-gray-700 font-medium">Ebeveyn Yatak Odası</span>
+              <span className="text-gray-700 font-medium">{t('feature3')}</span>
             </div>
             <div className="flex items-center gap-3">
               <span className="text-3xl">🧸</span>
-              <span className="text-gray-700 font-medium">Çocuk Odası</span>
+              <span className="text-gray-700 font-medium">{t('feature4')}</span>
             </div>
             <div className="flex items-center gap-3">
               <span className="text-3xl">🍳</span>
-              <span className="text-gray-700 font-medium">Tam Donanımlı Mutfak</span>
+              <span className="text-gray-700 font-medium">{t('feature5')}</span>
             </div>
             <div className="flex items-center gap-3">
               <span className="text-3xl">🚿</span>
-              <span className="text-gray-700 font-medium">Modern Duş & Banyo</span>
+              <span className="text-gray-700 font-medium">{t('feature6')}</span>
             </div>
             <div className="flex items-center gap-3">
               <span className="text-3xl">🪑</span>
-              <span className="text-gray-700 font-medium">Balkon ve Masa</span>
+              <span className="text-gray-700 font-medium">{t('feature7')}</span>
             </div>
             <div className="flex items-center gap-3">
               <span className="text-3xl">❄️</span>
-              <span className="text-gray-700 font-medium">Klima & İnternet</span>
+              <span className="text-gray-700 font-medium">{t('feature8')}</span>
             </div>
           </div>
         </div>

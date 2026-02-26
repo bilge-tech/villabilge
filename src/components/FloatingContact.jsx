@@ -40,7 +40,7 @@ function FloatingContact() {
       </a>  
 
 {/* 4. ÖZGE BUNGALOW BUTONU (En Alttaki Buton) */}
-      <a href="https://ozgebungalow.com" target="_blank" rel="noreferrer" className="group w-[42px] h-[42px] md:w-[50px] md:h-[50px] bg-white rounded-full flex items-center justify-center shadow-[0_4px_10px_rgba(0,0,0,0.15)] transition-all duration-300 hover:scale-110 hover:border-2 hover:border-orange-500 relative decoration-none overflow-hidden">
+      <a href="https://ozgebungalow.com" target="_blank" rel="noreferrer" className="group w-[42px] h-[42px] md:w-[50px] md:h-[50px] bg-white rounded-full flex items-center justify-center shadow-[0_4px_10px_rgba(0,0,0,0.15)] transition-all duration-300 hover:scale-110 hover:border-2 hover:border-orange-500 relative decoration-none ">
         
         {/* EMOJİYİ SİLDİK, YERİNE LOGOYU KOYDUK */}
         {/* src="/ozgelogo.png" kısmı senin public klasörüne attığın logonun adıdır. İsmi neyse buraya onu yazmalısın. */}

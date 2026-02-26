@@ -1,55 +1,58 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next'; // Çeviri kancamızı import ettik
 
 function Cirali() {
+  const { t } = useTranslation(); // 't' fonksiyonumuzu başlattık
+
   const places = [
     {
       id: 1,
-      title: 'Yanartaş (Chimaera)',
-      description: 'Binlerce yıldır sönmeyen mitolojik ateş.',
+      title: t('yanartasTitle'),
+      description: t('yanartasDesc'),
       image: '/yanartas.webp',
       // CSS'indeki .tall karşılığı (2 kat uzun)
       sizeClass: 'md:row-span-2' 
     },
     {
       id: 2,
-      title: 'Olimpos Antik Kenti',
-      description: 'Tarihin içinde bir nehir yürüyüşü.',
+      title: t('olimposTitle'),
+      description: t('olimposDesc'),
       image: '/olimpos.webp',
       // CSS'indeki .wide karşılığı (2 kat geniş)
       sizeClass: 'md:col-span-2' 
     },
     {
       id: 3,
-      title: 'Tekne Turları',
-      description: 'Akdeniz\'in gizli koylarını keşfedin.',
+      title: t('tekneTitle'),
+      description: t('tekneDesc'),
       image: '/tekne.webp',
       sizeClass: '' // Standart 1x1
     },
     {
       id: 4,
-      title: 'Çıralı Sahili',
-      description: '3 kilometrelik eşsiz bir kumsal ve masmavi deniz.',
+      title: t('sahilTitle'),
+      description: t('sahilDesc'),
       image: '/deniz.webp',
       sizeClass: 'md:col-span-2' 
     },
     {
       id: 5,
-      title: 'Likya Yolu',
-      description: 'Tarihi patikalarda doğa yürüyüşü.',
+      title: t('likyaTitle'),
+      description: t('likyaDesc'),
       image: '/likya.webp',
       sizeClass: 'md:row-span-2' 
     },
     {
       id: 6,
-      title: 'Ulupınar',
-      description: 'Buz gibi suların üzerinde yemek keyfi.',
+      title: t('ulupinarTitle'),
+      description: t('ulupinarDesc'),
       image: '/ulupınar.webp',
       sizeClass: '' 
     },
     {
       id: 7,
-      title: 'Caretta Caretta',
-      description: 'Doğanın mucizesine tanıklık edin.',
+      title: t('carettaTitle'),
+      description: t('carettaDesc'),
       image: '/caretta.webp',
       sizeClass: 'md:col-span-2' 
     }
@@ -60,8 +63,9 @@ function Cirali() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-bilge-lacivert mb-4">Çıralı'da Keşfedilecekler</h2>
-          <p className="text-gray-600 text-lg">Doğanın ve tarihin kucağında unutulmaz deneyimler.</p>
+          {/* Başlık ve alt başlığı çeviriye uygun hale getirdik */}
+          <h2 className="text-4xl font-bold text-bilge-lacivert mb-4">{t('ciraliMainTitle')}</h2>
+          <p className="text-gray-600 text-lg">{t('ciraliMainSubtitle')}</p>
         </div>
 
         {/* MASONRY GRID 

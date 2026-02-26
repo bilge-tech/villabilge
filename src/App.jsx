@@ -5,6 +5,7 @@ import About from './components/About'; // Hakkımızda bölümünü de ekleyeli
 import Villas from './components/Villas'; // Odalarımız bölümünü de ekleyelim
 import Cirali from './components/Cirali'; // Çıralı Rehberi bölümünü de ekleyelim
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 function App() {
   return (
     <div className="font-sans antialiased text-gray-900">
@@ -15,7 +16,7 @@ function App() {
       <Villas />
       <Cirali />
       <Contact />
-       {/* Hakkımızda bölümü */} 
+      <Footer />
       {/* Hakkımızda, Odalarımız gibi diğer parçalar da buraya alt alta gelecek */}
     </div>
   );
