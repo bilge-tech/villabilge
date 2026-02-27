@@ -40,13 +40,20 @@ function Navbar() {
             </ul>
 
             {/* 4. ADIM: DİL BAYRAKLARI BURAYA EKLENDİ */}
-            <div className="flex gap-2 text-xl ml-2">
-              <button onClick={() => changeLanguage('tr')} className="hover:scale-125 transition-transform" title="Türkçe">🇹🇷</button>
-              <button onClick={() => changeLanguage('en')} className="hover:scale-125 transition-transform" title="English">🇪🇳</button>
-              <button onClick={() => changeLanguage('de')} className="hover:scale-125 transition-transform" title="Deutsch">🇩🇪</button>
-              <button onClick={() => changeLanguage('ru')} className="hover:scale-125 transition-transform" title="Русский">🇷🇺</button>
-            </div>
-
+            <div className="flex gap-4 md:gap-2 text-2xl md:text-xl ml-2 items-center">
+  <button onClick={() => changeLanguage('tr')} className="hover:scale-125 transition-transform" title="Türkçe">
+    🇹🇷
+  </button>
+  <button onClick={() => changeLanguage('en')} className="hover:scale-125 transition-transform" title="English">
+    🇺🇸
+  </button>
+  <button onClick={() => changeLanguage('de')} className="hover:scale-125 transition-transform" title="Deutsch">
+    🇩🇪
+  </button>
+  <button onClick={() => changeLanguage('ru')} className="hover:scale-125 transition-transform" title="Русский">
+    🇷🇺
+  </button>
+</div>
             {/* === HAMBURGER BUTONU (Sadece Mobilde) === */}
             <div className="md:hidden flex items-center ml-2">
               <button 
