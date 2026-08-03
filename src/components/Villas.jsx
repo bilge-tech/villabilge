@@ -11,7 +11,17 @@ function Villas() {
   const images = [
     "/bilge3.webp", // Ev dış çekim
     "/bilge2.webp", // Ebeveyn Odası
-    "/bilge1.webp", // Mutfak
+    "/bilge1.webp",
+    "/bilge4.webp", // Salon
+    "/bilge5.webp", // Mutfak
+    "/bilge6.webp", // Havuz  
+    "/bilge7.webp", // Bahçe
+    "/bilge8.webp", // Çocuk Odası
+    "/bilge9.webp", // Banyo
+    "/bilge10.webp", // Balkon
+    "/bilge11.webp", // Çatı Katı
+
+
   ];
 
   // === 2. REACT'İN HAFIZASI VE ZAMANLAYICISI ===
